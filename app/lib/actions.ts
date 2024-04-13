@@ -63,7 +63,6 @@ export async function updateInvoice(id: string, formData: FormData) {
   }
 
   export async function deleteInvoice(id: string) {
-
      // the obvious unreachale block if an error is throwed in
     try {
       await sql`DELETE FROM invoices WHERE id = ${id}`;
